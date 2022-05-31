@@ -1,0 +1,11 @@
+<body>
+  <div>
+    <a routerLink="" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a [routerLink]="['lista']" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Lista podcast</a>
+    <a [routerLink]="['play', 0, '']" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Play</a>
+  </div>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</body>
